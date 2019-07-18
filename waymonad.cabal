@@ -190,7 +190,8 @@ library
   
   -- Directories containing source files.
   hs-source-dirs:      src
-  
+  PkgConfig-Depends:   libinput
+  extra-libraries: xkbcommon
   -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
   build-tools:         hsc2hs
   

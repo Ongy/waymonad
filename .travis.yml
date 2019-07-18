@@ -1,0 +1,5 @@
+language: nix
+script:
+- nix-env -iA cachix -f https://cachix.org/api/v1/install
+- cachix use waymonad
+- nix-build -j2
